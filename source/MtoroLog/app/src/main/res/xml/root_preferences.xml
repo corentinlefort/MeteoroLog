@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/person_header">
+
+        <EditTextPreference
+            app:defaultValue=""
+            app:key="prenom"
+            app:title="@string/name_title"
+            app:useSimpleSummaryProvider="true"
+            app:dialogTitle="@string/name_title" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/stations_header">
+
+        <ListPreference
+            app:entries="@array/stations_entries"
+            app:entryValues="@array/stations_values"
+            app:key="station"
+            app:title="@string/station_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

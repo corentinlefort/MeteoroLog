@@ -1,0 +1,10 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="stations_entries">
+        <item>Non définie</item>
+    </string-array>
+
+    <string-array name="stations_values">
+        <item></item>
+    </string-array>
+</resources>

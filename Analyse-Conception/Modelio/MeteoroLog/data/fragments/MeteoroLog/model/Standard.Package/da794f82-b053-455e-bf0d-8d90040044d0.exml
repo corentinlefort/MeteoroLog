@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Class diagram" version="4">
+  <OBJECT>
+    <ID name="Class diagram" mc="Standard.Package" uid="da794f82-b053-455e-bf0d-8d90040044d0"/>
+    <PID name="meteorolog" mc="Standard.Package" uid="285a044e-fb79-4670-85e9-36d4b43adc92"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Class diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Station" mc="Standard.Class" uid="a74de9d9-999e-4e67-bcfc-5ef695e7a761"/>
+        <COMPID name="Utilisateur" mc="Standard.Class" uid="510f59dc-6652-4d3e-a2b6-2681e4040d49"/>
+        <COMPID name="Interface" mc="Standard.Class" uid="33a9ae96-20be-42c4-bd28-428b44fceeb2"/>
+        <COMPID name="Météo" mc="Standard.Class" uid="e1af5c30-f4c7-4e27-9fbb-399ba1723fc3"/>
+        <COMPID name="AlerteMeteo" mc="Standard.Class" uid="a18e0d7f-6647-48ee-be86-268ee078224e"/>
+        <COMPID name="RetourExp" mc="Standard.Class" uid="09a3bf3c-d1b9-435c-a43e-ae79ebac3392"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Classes" mc="Standard.ClassDiagram" uid="24474cca-90a3-4e02-84e6-4a6150ba421a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

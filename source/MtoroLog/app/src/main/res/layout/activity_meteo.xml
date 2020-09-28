@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MeteoActivity">
+
+    <Button
+        android:id="@+id/setToAfternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="setToAfternoon"
+        android:text="Après-midi"
+        app:layout_constraintBottom_toBottomOf="@+id/setToMorning"
+        app:layout_constraintEnd_toStartOf="@+id/setToEvening"
+        app:layout_constraintStart_toEndOf="@+id/setToMorning"
+        app:layout_constraintTop_toTopOf="@+id/setToMorning"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/setToMorning"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="setToMorning"
+        android:text="Matin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateSelector"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/setToEvening"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="setToEvening"
+        android:text="soir"
+        app:layout_constraintBottom_toBottomOf="@+id/setToAfternoon"
+        app:layout_constraintEnd_toStartOf="@+id/setToNight"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toEndOf="@+id/setToMorning"
+        app:layout_constraintTop_toTopOf="@+id/setToAfternoon"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/setToNight"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:onClick="setToNight"
+        android:text="nuit"
+        app:layout_constraintBottom_toBottomOf="@+id/setToEvening"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/setToMorning"
+        app:layout_constraintTop_toTopOf="@+id/setToEvening"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="init"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setToAfternoon"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidité : "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meteoImage"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/meteo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="224dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meteoName"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <ImageView
+        android:id="@+id/meteoImage"
+        android:layout_width="100dp"
+        android:layout_height="98dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setToMorning"
+        app:layout_constraintVertical_bias="0.299"
+        app:srcCompat="@drawable/w1" />
+
+    <TextView
+        android:id="@+id/meteoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Météo name"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/meteoImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toEndOf="@+id/meteoImage"
+        app:layout_constraintTop_toTopOf="@+id/meteoImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/dateSelector"
+        android:layout_width="302dp"
+        android:layout_height="39dp"
+        android:background="#0099ff"
+        android:splitMotionEvents="true"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

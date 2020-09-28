@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MétéoroLog</string>
+    <string name="URLserveur">http://192.168.1.59/MeteoroLog/source/api/scriptAPI.php</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="default_welcome">Welcome on MeteoroLog</string>
+    <string name="welcome">Welcome</string>
+    <string name="gopref">Think of set your favorite stations !</string>
+    <string name="person_header">My informations</string>
+    <string name="stations_header">My settings</string>
+    <string name="station_title">My favorite station</string>
+    <string name="name_title">My name</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MeteoroLog" version="4">
+  <OBJECT>
+    <ID name="MeteoroLog" mc="Infrastructure.DiagramSet" uid="df55bcdc-5635-4f68-8fee-88f8158829dc"/>
+    <PID name="MeteoroLog" mc="Standard.Project" uid="e4c261d6-85a6-41a1-98c3-415cbdb2b529"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[MeteoroLog]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
